@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "festava-backend",
   "version": "1.0.0",
@@ -21,4 +22,29 @@
   "devDependencies": {
     "nodemon": "^3.1.1"
   }
+=======
+{
+  "name": "festava-backend",
+  "version": "1.0.0",
+  "description": "Music Festival Ticket Booking System",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.1"
+  }
+>>>>>>> ba90c37be0a4b7c732dfce762360c9d26c2d13ea
 }
