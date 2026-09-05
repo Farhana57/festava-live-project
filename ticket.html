@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Festava Live - Ticket HTML Form</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-person custom-icon me-2"></i>
+                            <strong class="text-dark">Welcome to Music Festival 2025</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Festava Live</a>
+                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                        <li class="nav-item"><a class="nav-link click-scroll" href="index.html#section_1">Home</a></li>
+                        <li class="nav-item"><a class="nav-link click-scroll" href="index.html#section_2">About</a></li>
+                        <li class="nav-item"><a class="nav-link click-scroll" href="index.html#section_3">Artists</a></li>
+                        <li class="nav-item"><a class="nav-link click-scroll" href="index.html#section_4">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link click-scroll" href="index.html#section_5">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link click-scroll" href="index.html#section_6">Contact</a></li>
+                    </ul>
+                    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="ticket-section section-padding">
+            <div class="section-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-10 mx-auto">
+                        <form class="custom-form ticket-form mb-5 mb-lg-0" id="ticketBookingForm" role="form">
+                            <h2 class="text-center mb-4">Get started here</h2>
+                            
+                            <div class="ticket-form-body">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <input type="email" name="email" id="email" class="form-control" placeholder="Email address" required>
+                                    </div>
+                                </div>
+
+                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Ph 085-456-7890" required>
+
+                                <h6>Choose Ticket Type</h6>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-control">
+                                            <input class="form-check-input" type="radio" name="ticketType" id="earlyBird" value="Early Bird $120" checked>
+                                            <label class="form-check-label" for="earlyBird">Early bird $120</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-check form-check-radio form-control">
+                                            <input class="form-check-input" type="radio" name="ticketType" id="standard" value="Standard $240">
+                                            <label class="form-check-label" for="standard">Standard $240</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <input type="number" name="quantity" id="quantity" class="form-control" placeholder="Number of Tickets" min="1" required>
+
+                                <textarea name="message" id="message" rows="3" class="form-control" placeholder="Additional Request"></textarea>
+
+                                <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                    <button type="submit" class="form-control">Buy Ticket</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-lg-0">Festava Live</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-12 mt-5">
+                        <p class="copyright-text">Copyright © 2036 Festava Live Company</p>
+                        <p class="copyright-text">Distributed by: <a href="https://themewagon.com">Farhana</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/custom.js"></script>
+    
+    <a href="https://wa.me/8801XXXXXXXXX" class="whatsapp-float" target="_blank">
+        <i class="bi-whatsapp"></i>
+    </a>
+
+    <script>
+        document.getElementById('ticketBookingForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerText;
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Processing...";
+
+            const formData = {
+                name: document.getElementById('name')?.value,
+                email: document.getElementById('email')?.value,
+                phone: document.getElementById('phone')?.value,
+                ticketType: document.querySelector('input[name="ticketType"]:checked')?.value || 'Standard',
+                quantity: document.getElementById('quantity')?.value,
+                message: document.getElementById('message')?.value
+            };
+
+            try {
+                // ভার্সেলে চালানোর জন্য লোকালহোস্ট বাদ দিয়ে শুধু ব্যাকএন্ড রুট পাথ দেওয়া হয়েছে
+                const response = await fetch('/api/tickets/book', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    alert(`অভিনন্দন! আপনার টিকেট বুকিং সফল হয়েছে।\nবুকিং আইডি: ${result.bookingId || 'N/A'}`);
+                    this.reset();
+                } else {
+                    alert('সার্ভার এরর: ' + (result.error || 'বুকিং ব্যর্থ হয়েছে'));
+                }
+            } catch (error) {
+                console.error('Network Error:', error);
+                alert('সার্ভারের সাথে সংযোগ স্থাপন করা সম্ভব হয়নি। অনুগ্রহ করে আবার চেষ্টা করুন।');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerText = originalBtnText;
+            }
+        });
+    </script>
+</body>
+</html>

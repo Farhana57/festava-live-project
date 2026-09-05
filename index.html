@@ -1,0 +1,882 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Festava Live - Bootstrap 5 CSS Template</title>
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!--
+TemplateMo 583 Festava Live
+https://templatemo.com/tm-583-festava-live
+-->
+<link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+    <style>
+         /* WhatsApp Floating Button Style */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF !important; /* Icon color white */
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            z-index: 9999; /* Sobar upore thakar jonno */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .whatsapp-float:hover {
+            background-color: hsl(110, 96%, 48%);
+            transform: scale(1.1);
+            color: white;
+        }
+        .accordion-item {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+}
+.accordion-button {
+    background-color: #242424;
+    color: white;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #ee5007; /* Tomar theme color */
+    color: white;
+}
+.accordion-body {
+    color: #ddd;
+    background-color: #1a1a1a;
+}
+.sponsor-logo {
+    opacity: 0.6;
+    transition: 0.3s;
+    filter: grayscale(100%);
+}
+.sponsor-logo:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+    </style>
+</head>
+<body>
+    <main>
+       <header class="site-header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-person custom-icon me-2"></i>
+                            <strong class="text-dark">Welcome to Music Festival 2025 BD</strong>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    Festava Live
+                </a>
+
+                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                 <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+        <li class="nav-item">
+            <a class="nav-link click-scroll" href="#section_1">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link click-scroll" href="#section_2">About</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link click-scroll" href="#section_3">Artists</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link click-scroll" href="#section_4">Schedule</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link click-scroll" href="#section_5">Pricing</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+    </ul>
+    <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Buy Ticket</a>
+</div>
+            </div>
+        </nav>
+        <section class="hero-section" id="section_1">
+            <div class="section-overlay"></div>
+
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-12 mt-auto mb-5 text-center">
+                        <small>Festava Live Presents</small>
+                        <h1 class="text-white mb-5">Night Live 2025</h1>
+                        <a class="btn custom-btn smoothscroll" href="#section_2">Let's begin</a>
+                    </div>
+                    <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
+                        <div class="date-wrap">
+                            <h5 class="text-white">
+                                <i class="custom-icon bi-clock me-2"></i>
+                                10 - 12<sup>th</sup>, Dec 2025
+                            </h5>
+                        </div>
+
+                        <div class="location-wrap mx-auto py-3 py-lg-0">
+                            <h5 class="text-white">
+                                <i class="custom-icon bi-geo-alt me-2"></i>
+                                National Center, Bangladesh
+                            </h5>
+                        </div>
+
+                        <div class="social-share">
+                            <ul class="social-icon d-flex align-items-center justify-content-center">
+                                <span class="text-white me-3">Share:</span>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-facebook"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-twitter"></span>
+                                    </a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link">
+                                        <span class="bi-instagram"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="video-wrap">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="video/pexels-2022395.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+      <section class="about-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+                        <div class="services-info">
+                            <h2 class="text-white mb-4">About Festava 2022</h2>
+                            <p class="text-white">Festava Live is free CSS template provided by TemplateMo website. This
+                                layout is built on Bootstrap v5.2.2 CSS library. You are free to use this template for
+                                your commercial website.</p>
+                            <h6 class="text-white mt-4">Once in Lifetime Experience</h6>
+                            <p class="text-white">You are not allowed to redistribute the template ZIP file on any other
+                                website without a permission.</p>
+                            <h6 class="text-white mt-4">Whole Night Party</h6>
+                            <p class="text-white">Please tell your friends about our website. Thank you.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="about-text-wrap">
+                            <img src="images/pexels-alexander-suhorucov-6457579.jpg" class="about-image img-fluid">
+                            <div class="about-text-info d-flex">
+                                <div class="d-flex">
+                                    <i class="about-text-icon bi-person"></i>
+                                </div>
+                                   <div class="ms-4">
+                                    <h3>a happy moment</h3>
+                                    <p class="mb-0">your amazing festival experience with us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="artists-section section-padding" id="section_artists">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="mb-5">Meet Our Artists</h2>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="artist-card">
+                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=500&q=80" class="img-fluid artist-image" alt="Artist 1">
+                    <div class="artist-overlay">
+                        <div class="artist-info">
+                            <h5>DJ Shadow</h5>
+                            <p>Electronic / Techno</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi-instagram"></i></a>
+                                <a href="#"><i class="bi-spotify"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="artist-card">
+                    <img src="https://images.unsplash.com/photo-1493225255756-d9584f8606e9?auto=format&fit=crop&w=500&q=80" class="img-fluid artist-image" alt="Artist 2">
+                    <div class="artist-overlay">
+                        <div class="artist-info">
+                            <h5>Luna Ray</h5>
+                            <p>Pop / Indie</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi-instagram"></i></a>
+                                <a href="#"><i class="bi-spotify"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="artist-card">
+                    <img src="images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg" class="img-fluid artist-image" alt="Artist 3">
+                    <div class="artist-overlay">
+                        <div class="artist-info">
+                            <h5>The Bass Rockers</h5>
+                            <p>Rock / Metal</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="bi-instagram"></i></a>
+                                <a href="#"><i class="bi-spotify"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+.artist-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.artist-image {
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+.artist-overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(238, 80, 7, 0.9), transparent);
+    transition: bottom 0.4s ease;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+}
+.artist-card:hover .artist-overlay {
+    bottom: 0;
+}
+.artist-card:hover .artist-image {
+    transform: scale(1.1);
+}
+.artist-info h5 { color: #fff; margin-bottom: 5px; font-weight: bold; }
+.artist-info p { color: #eee; font-size: 14px; }
+.social-icons a { color: white; margin-right: 15px; font-size: 20px; }
+</style>
+        <section class="artists-section section-padding" id="section_3">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2 class="mb-5">Meet Our Artists</h2>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="images/artists/joecalih-UmTZqmMvQcw-unsplash.jpg" class="artists-image img-fluid">
+                    </div>
+                    <div class="artists-hover">
+                        <p><strong>Name:</strong> Madona</p>
+                        <p><strong>Birthdate:</strong> Aug 16, 1958</p>
+                        <p><strong>Music:</strong> Pop, R&B</p>
+                        <hr>
+                        <p class="mb-0"><strong>YouTube:</strong> <a href="#">Madona Official</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="artist unsplash.jpg" class="artists-image img-fluid">
+                    </div>
+                    <div class="artists-hover">
+                        <p><strong>Name:</strong> Rihanna</p>
+                        <p><strong>Birthdate:</strong> Feb 20, 1988</p>
+                        <p><strong>Music:</strong> Country</p>
+                        <hr>
+                        <p class="mb-0"><strong>YouTube:</strong> <a href="#">Rihanna Official</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 mb-4">
+                <div class="artists-thumb">
+                    <div class="artists-image-wrap">
+                        <img src="images/artist.jpg" class="artists-image img-fluid">
+                    </div>
+                    <div class="artists-hover">
+                        <p><strong>Name:</strong> Bruno Bros</p>
+                        <p><strong>Birthdate:</strong> Oct 8, 1985</p>
+                        <p><strong>Music:</strong> Pop</p>
+                        <hr>
+                        <p class="mb-0"><strong>YouTube:</strong> <a href="#">Bruno Official</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+        <section class="schedule-section section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="text-white mb-4">Event Schedule</h1>
+                            <div class="table-responsive">
+                                <table class="schedule-table table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Wednesday</th>
+                                            <th scope="col">Thursday</th>
+                                            <th scope="col">Friday</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">Day 1</th>
+                                            <td class="table-background-image-wrap pop-background-image">
+                                                <h3>Pop Night</h3>
+                                                <p class="mb-2">5:00 - 7:00 PM</p>
+                                                <p>By Adele</p>
+                                                <div class="section-overlay"></div>
+                                            </td>
+                                            <td style="background-color: #F3DCD4"></td>
+                                            <td class="table-background-image-wrap rock-background-image">
+                                                <h3>Rock & Roll</h3>
+                                                <p class="mb-2">7:00 - 11:00 PM</p>
+
+                                                <p>By Rihana</p>
+
+                                                <div class="section-overlay"></div>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Day 2</th>
+
+                                            <td style="background-color: #ECC9C7"></td>
+
+                                            <td>
+                                                <h3>DJ Night</h3>
+
+                                                <p class="mb-2">6:30 - 9:30 PM</p>
+
+                                                <p>By Rihana</p>
+                                            </td>
+
+                                            <td style="background-color: #D9E3DA"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th scope="row">Day 3</th>
+
+                                            <td class="table-background-image-wrap country-background-image">
+                                                <h3>Country Music</h3>
+
+                                                <p class="mb-2">4:30 - 7:30 PM</p>
+
+                                                <p>By Rihana</p>
+
+                                                <div class="section-overlay"></div>
+                                            </td>
+
+                                            <td style="background-color: #D1CFC0"></td>
+
+                                            <td>
+                                                <h3>Free Styles</h3>
+
+                                                <p class="mb-2">6:00 - 10:00 PM</p>
+
+                                                <p>By Members</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pricing-section section-padding section-bg" id="section_5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h2 class="text-center mb-4">Plans, you' love</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="pricing-thumb">
+                            <div class="d-flex">
+                                <div>
+                                    <h3><small>Early Bird</small> $120</h3>
+
+                                    <p>Including good things:</p>
+                                </div>
+
+                                <p class="pricing-tag ms-auto">Save up to <span>50%</span></h2>
+                            </div>
+
+                            <ul class="pricing-list mt-3">
+                                <li class="pricing-list-item">platform for potential customers</li>
+
+                                <li class="pricing-list-item">digital experience</li>
+
+                                <li class="pricing-list-item">high-quality sound</li>
+
+                                <li class="pricing-list-item">standard content</li>
+                            </ul>
+
+                            <a class="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
+                                <span>Buy Ticket</span>
+                                <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="16" cy="16" r="15.5"></circle>
+                                        <line x1="10" y1="18" x2="16" y2="12"></line>
+                                        <line x1="16" y1="12" x2="22" y2="18"></line>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-4 mt-lg-0">
+                        <div class="pricing-thumb">
+                            <div class="d-flex">
+                                <div>
+                                    <h3><small>Standard</small> $240</h3>
+
+                                    <p>What makes a premium festava?</p>
+                                </div>
+                            </div>
+
+                            <ul class="pricing-list mt-3">
+                                <li class="pricing-list-item">platform for potential customers</li>
+
+                                <li class="pricing-list-item">digital experience</li>
+
+                                <li class="pricing-list-item">high-quality sound</li>
+
+                                <li class="pricing-list-item">premium content</li>
+
+                                <li class="pricing-list-item">live chat support</li>
+                            </ul>
+
+                            <a class="link-fx-1 color-contrast-higher mt-4" href="ticket.html">
+                                <span>Buy Ticket</span>
+                                <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="16" cy="16" r="15.5"></circle>
+                                        <line x1="10" y1="18" x2="16" y2="12"></line>
+                                        <line x1="16" y1="12" x2="22" y2="18"></line>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+          <section class="faq-section section-padding" id="section_faq">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-12 text-center">
+                <h2 class="mb-4">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="col-lg-8 col-12 mx-auto">
+                <div class="accordion" id="accordionExample">
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">
+                                Festival-er Entry Time kakhon?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Protidin bikal 4:00 PM theke entry shuru hobe. Concert-er main performance shuru hobe 5:30 PM theke.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                Ticket ki offline-e pawa jabe?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Na, amra shudhu online ticket allow korchi. Booth theke ticket collect korar kono bebostha nei.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                Bahir theke khabar ana jabe?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Security karone bahirer khabar ba drink allow kora hobe na. Bhitore amader onek gulo food stall thakbe.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="contact-section section-padding" id="section_6">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h2 class="text-center mb-4">Interested? Let's talk</h2>
+
+                        <nav class="d-flex justify-content-center">
+                            <div class="nav nav-tabs align-items-baseline justify-content-center" id="nav-tab"
+                                role="tablist">
+                                <button class="nav-link active" id="nav-ContactForm-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-ContactForm" type="button" role="tab"
+                                    aria-controls="nav-ContactForm" aria-selected="false">
+                                    <h5>Contact Form</h5>
+                                </button>
+
+                                <button class="nav-link" id="nav-ContactMap-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-ContactMap" type="button" role="tab"
+                                    aria-controls="nav-ContactMap" aria-selected="false">
+                                    <h5>Google Maps</h5>
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-ContactForm" role="tabpanel"
+                                aria-labelledby="nav-ContactForm-tab">
+                                <form class="custom-form contact-form mb-5 mb-lg-0" action="#" method="post"
+                                    role="form">
+                                    <div class="contact-form-body">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <input type="text" name="contact-name" id="contact-name"
+                                                    class="form-control" placeholder="Full name" required>
+                                            </div>
+
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <input type="email" name="contact-email" id="contact-email"
+                                                    pattern="[^ @]*@[^ @]*" class="form-control"
+                                                    placeholder="Email address" required>
+                                            </div>
+                                        </div>
+
+                                        <input type="text" name="contact-company" id="contact-company"
+                                            class="form-control" placeholder="Company" required>
+
+                                        <textarea name="contact-message" rows="3" class="form-control"
+                                            id="contact-message" placeholder="Message"></textarea>
+
+                                        <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                                            <button type="submit" class="form-control">Send message</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="tab-pane fade" id="nav-ContactMap" role="tabpanel"
+                                aria-labelledby="nav-ContactMap-tab">
+                                <iframe class="google-map"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29974.469402870927!2d120.94861466021855!3d14.106066818082482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd777b1ab54c8f%3A0x6ecc514451ce2be8!2sTagaytay%2C%20Cavite%2C%20Philippines!5e1!3m2!1sen!2smy!4v1670344209509!5m2!1sen!2smy"
+                                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                <!-- You can easily copy the embed code from Google Maps -> Share -> Embed a map // -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+      <section class="sponsors-section section-padding section-bg">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 text-center mb-5">
+                <h2 class="text-black">Our Partners</h2>
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg" class="img-fluid sponsor-logo" alt="Sponsor">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="images/pexels-alexander-suhorucov-6457579.jpg" class="img-fluid sponsor-logo" alt="Sponsor">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="artist unsplash.jpg" class="img-fluid sponsor-logo" alt="Sponsor">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="https://media.istockphoto.com/id/2204993795/photo/young-middle-eastern-artist-creating-artwork-at-modern-studio-with-natural-light.jpg?s=1024x1024&w=is&k=20&c=XQ-dRfeOCWsm3Gzz_-1TPyosNov38XuDBBq7dDhA3co=" class="img-fluid sponsor-logo" alt="Sponsor">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="https://media.istockphoto.com/id/1321486723/photo/japanese-man-spending-weekend-morning-painting-in-his-bedroom-at-home.jpg?s=1024x1024&w=is&k=20&c=neznkrEq5cy-rUpvhyruvTvEi0b0pUgpiz-NvkHixek=" class="img-fluid sponsor-logo" alt="Sponsor">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="https://images.unsplash.com/file-1715652217532-464736461acbimage?w=416&dpr=2&auto=format&fit=crop&q=60" class="img-fluid sponsor-logo" alt="Sponsor">
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-lg-0">Festava Live</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                        <ul class="social-icon d-flex justify-content-lg-end">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-twitter"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-apple"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-youtube"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-pinterest"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 mb-4 pb-2">
+                    <h5 class="site-footer-title mb-3">Links</h5>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">About</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Artists</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Schedule</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Pricing</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Have a question?</h5>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 090-080-0760" class="site-footer-link">
+                            090-080-0760
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:hello@company.com" class="site-footer-link">
+                            hello@company.com
+                        </a>
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                    <h5 class="site-footer-title mb-3">Location</h5>
+
+                    <p class="text-white d-flex mt-3 mb-2">
+                        Silang Pirty, Sylhet, Five Ster, Bangladesh</p>
+
+                    <a class="link-fx-1 color-contrast-higher mt-3" href="#">
+                        <span>Our Maps</span>
+                        <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="16" cy="16" r="15.5"></circle>
+                                <line x1="10" y1="18" x2="16" y2="12"></line>
+                                <line x1="16" y1="12" x2="22" y2="18"></line>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mt-5">
+                        <p class="copyright-text">Copyright © 2036 Festava Live Company</p>
+                        <p class="copyright-text">Distributed by: <a href="https://themewagon.com">Farhana</a></p>
+                    </div>
+
+                    <div class="col-lg-8 col-12 mt-lg-5">
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Terms &amp; Conditions</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Privacy Policy</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Your Feedback</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <a href="https://wa.me/8801700000000" class="whatsapp-float" target="_blank">
+        <i class="bi-whatsapp"></i>
+    </a>
+    <!--
+T e m p l a t e M o
+-->
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+    const contactForm = document.querySelector('.contact-form');
+    
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const formData = {
+                name: document.getElementById('contact-name').value,
+                email: document.getElementById('contact-email').value,
+                company: document.getElementById('contact-company').value,
+                message: document.getElementById('contact-message').value
+            };
+
+            try {
+                // ভার্সেলে চালানোর জন্য লোকালহোস্ট বাদ দিয়ে শুধু রিলাটিভ পাথ ব্যবহার করা হয়েছে
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    alert(result.message || "মেসেজ সফলভাবে পাঠানো হয়েছে!");
+                    contactForm.reset();
+                } else {
+                    alert(result.message || "কিছু একটা সমস্যা হয়েছে।");
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                alert("সার্ভারের সাথে সংযোগ স্থাপন করা সম্ভব হয়নি।");
+            }
+        });
+    }
+</script>
+</body>
+</html>
