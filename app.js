@@ -42,6 +42,11 @@ const contactSchema = new mongoose.Schema({
 const Contact = mongoose.model('Contact', contactSchema);
 
 // --- 4. ROUTES ---
+// হোম পেজে ভিজিট করলে index.html দেখানোর রাউট
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 app.post('/api/tickets/book', async (req, res) => {
     try {
         const uniqueId = "FEST-" + Math.floor(100000 + Math.random() * 900000);
