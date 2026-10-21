@@ -1,0 +1,730 @@
+/* ==========================================
+   FESTAVA LIVE COMPLETE & FIXED CSS
+   ========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px; /* Navbar fixed থাকার কারণে কন্টেন্ট নিচে নামানোর জন্য */
+}
+
+/* 1. TOP HEADER BAR */
+.site-header {
+    background-color: #ee5007 !important;
+    padding: 8px 0;
+    font-size: 14px;
+    position: relative;
+    z-index: 9999;
+}
+
+.site-header p, .site-header strong {
+    color: #ffffff !important;
+}
+
+/* 2. FIXED NAVBAR & STYLING */
+.navbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999 !important;
+    background-color: rgba(26, 26, 26, 0.95) !important;
+    backdrop-filter: blur(5px);
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff !important;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link.active {
+    color: #ee5007 !important;
+}
+
+/* Mobile Toggle Hamburger Button */
+.navbar-toggler {
+    z-index: 100000;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    padding: 6px 10px;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Mobile Responsive Dropdown Menu Styles */
+@media screen and (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #1a1a1a !important;
+        padding: 20px;
+        border-radius: 12px;
+        margin-top: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+
+    .navbar-nav {
+        margin-bottom: 15px;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .navbar-nav .nav-link {
+        color: #ffffff !important;
+        font-size: 17px;
+        padding: 8px 0;
+        display: block;
+    }
+
+    .navbar-collapse .custom-btn {
+        display: block !important;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* 2. HERO SECTION & VIDEO DISPLAY FIX */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.custom-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* HERO SOCIAL SHARE ICONS */
+.social-share .social-icon-item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.social-share .social-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: #ffffff;
+    color: #ee5007 !important;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.social-share .social-icon-link:hover {
+    background: #ee5007;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+}
+
+/* 3. BUTTONS */
+.custom-btn {
+    background: #ee5007;
+    color: #ffffff !important;
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-weight: 700;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.custom-btn:hover {
+    background: #d44405;
+}
+
+/* 4. ARTISTS SECTION */
+.artists-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #242424;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.artists-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.artists-thumb:hover .artists-image {
+    transform: scale(1.05);
+}
+
+.artists-hover {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 26, 0.95);
+    padding: 30px;
+    transition: bottom 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.artists-thumb:hover .artists-hover {
+    bottom: 0;
+}
+
+/* 5. SCHEDULE TABLE */
+.schedule-table {
+    background-color: #242424;
+    color: #fff;
+    text-align: center;
+    border-color: #333;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 20px;
+    vertical-align: middle;
+}
+
+/* 6. PRICING CARDS */
+.pricing-thumb {
+    background: #242424;
+    border-radius: 15px;
+    padding: 35px;
+    border: 1px solid rgba(255,255,255,0.1);
+    height: 100%;
+}
+
+.pricing-thumb h3 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.pricing-thumb p, .pricing-list-item {
+    color: #cccccc !important;
+    font-size: 15px;
+}
+
+.pricing-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-list-item {
+    margin-bottom: 12px;
+}
+
+.pricing-thumb .link-fx-1 {
+    display: inline-flex;
+    align-items: center;
+    background: #ee5007;
+    color: #ffffff !important;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.pricing-thumb .link-fx-1 .icon {
+    display: none !important;
+}
+
+/* 7. FAQ & ACCORDION */
+.accordion-item {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color: #242424;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ee5007;
+    color: white;
+}
+
+.accordion-body {
+    color: #ddd;
+    background-color: #1a1a1a;
+}
+
+/* 8. CONTACT FORM & TABS */
+.contact-section .nav-tabs {
+    border: none;
+}
+
+.contact-section .nav-link {
+    background: #242424;
+    color: #fff;
+    border: none;
+    margin: 0 5px;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.contact-section .nav-link.active {
+    background: #ee5007;
+}
+
+.custom-form .form-control {
+    background: #242424;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.custom-form .form-control:focus {
+    background: #242424;
+    border-color: #ee5007;
+    color: #fff;
+    box-shadow: none;
+}
+
+/* 9. FOOTER & FOOTER SOCIAL ICONS FIX */
+.site-footer {
+    background-color: #111111;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #aaaaaa;
+}
+
+.site-footer-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.site-footer .social-icon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.site-footer .social-icon-item {
+    margin-right: 10px;
+    list-style: none;
+}
+
+.site-footer .social-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff !important;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.site-footer .social-icon-link:hover {
+    background: #ee5007;
+    color: #ffffff !important;
+    transform: translateY(-3px);
+}
+
+.site-footer-title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.site-footer-link {
+    color: #aaaaaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer-link:hover {
+    color: #ee5007;
+}
+
+.site-footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.site-footer-link-item {
+    margin-bottom: 12px;
+}
+
+.site-footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 25px;
+}
+
+.copyright-text {
+    color: #777777;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.site-footer .link-fx-1 {
+    display: inline-flex;
+    align-items: center;
+    color: #ee5007 !important;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.site-footer .link-fx-1 svg.icon {
+    width: 20px !important;
+    height: 20px !important;
+    margin-left: 8px;
+    stroke: #ee5007 !important;
+}
+
+/* 10. WHATSAPP FLOATING BUTTON */
+.whatsapp-float {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #ffffff !important;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.4);
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #20ba5a;
+    transform: scale(1.1);
+    color: white;
+}
+/* ==========================================
+   FOOTER SOCIAL ICONS & WHATSAPP BUTTON FIX
+   ========================================== */
+
+/* Footer Social Icons Styling */
+.site-footer .social-icon {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 12px !important;
+}
+
+.site-footer .social-icon-item {
+    display: inline-block !important;
+    margin: 0 !important;
+    list-style: none !important;
+}
+
+.site-footer .social-icon-link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 42px !important;
+    height: 42px !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    border-radius: 50% !important;
+    text-decoration: none !important;
+    font-size: 18px !important;
+    transition: all 0.3s ease !important;
+}
+
+.site-footer .social-icon-link:hover {
+    background-color: #ee5007 !important;
+    color: #ffffff !important;
+    transform: translateY(-4px) !important;
+}
+
+/* ==========================================
+   WHATSAPP FLOATING BUTTON ULTIMATE FIX
+   ========================================== */
+
+.whatsapp-float {
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    background-color: #25d366 !important;
+    color: #ffffff !important;
+    border-radius: 50px !important;
+    text-align: center !important;
+    padding: 12px 20px !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4) !important;
+    z-index: 999999 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+.whatsapp-float:hover {
+    background-color: #0aee29 !important;
+    color: #ffffff !important;
+    transform: scale(1.08) !important;
+}
+
+.whatsapp-float i,
+.whatsapp-float .bi-whatsapp {
+    font-size: 24px !important;
+    line-height: 1 !important;
+    color: #ffffff !important;
+}
+
+.whatsapp-float span {
+    font-weight: 600 !important;
+    font-size: 15px !important;
+    color: #ffffff !important;
+    display: inline-block !important;
+}
+
+/* Mobile Screen Support */
+@media screen and (max-width: 767px) {
+    .whatsapp-float span {
+        display: none !important;
+    }
+    .whatsapp-float {
+        padding: 14px !important;
+        border-radius: 50% !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+/* ==========================================
+   FORM INPUT CLICK & TYPING FIX
+   ========================================== */
+
+/* Form Input Field Fix */
+.custom-form .form-control,
+.ticket-form .form-control,
+.contact-form .form-control {
+    position: relative !important;
+    z-index: 100 !important;
+    pointer-events: auto !important;
+    background-color: #242424 !important;
+    color: #ffffff !important;
+    border: 1px solid #333333 !important;
+    opacity: 1 !important;
+}
+
+/* Input Focus Color Fix */
+.custom-form .form-control:focus,
+.ticket-form .form-control:focus,
+.contact-form .form-control:focus {
+    background-color: #242424 !important;
+    color: #ffffff !important;
+    border-color: #ee5007 !important;
+    box-shadow: 0 0 10px rgba(238, 80, 7, 0.3) !important;
+    outline: none !important;
+}
+
+/* Background Section Overlay Priority Fix */
+.section-overlay {
+    z-index: 1 !important;
+    pointer-events: none !important;
+}
+
+.ticket-section .container,
+.contact-section .container {
+    position: relative !important;
+    z-index: 10 !important;
+}
+/* ==========================================
+   HERO COUNTDOWN TIMER STYLES
+   ========================================== */
+.countdown-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.countdown-box {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 12px 18px;
+    min-width: 75px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ee5007;
+    line-height: 1;
+}
+
+.countdown-box small {
+    font-size: 11px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    display: block;
+}
+
+@media screen and (max-width: 576px) {
+    .countdown-box {
+        padding: 8px 12px;
+        min-width: 60px;
+    }
+    .countdown-box span {
+        font-size: 20px;
+    }
+    .countdown-box small {
+        font-size: 9px;
+    }
+}
+/* ==========================================
+   STATS COUNTER & VENUE SECTION STYLES
+   ========================================== */
+
+/* Stats Counter Section */
+.stats-section {
+    background-color: #242424;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.stat-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.stat-icon {
+    font-size: 32px;
+    color: #ee5007;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Venue Section */
+.venue-section {
+    background-color: #1a1a1a;
+}
+
+.venue-info-box {
+    background: #242424;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.map-wrapper {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
