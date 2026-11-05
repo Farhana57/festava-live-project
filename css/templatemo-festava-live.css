@@ -1,0 +1,491 @@
+/*---------------------------------------------------------------------------------
+  TemplateMo 583 Festava Live
+  https://templatemo.com/tm-583-festava-live
+---------------------------------------------------------------------------------*/
+
+/* @import font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap');
+
+:root {
+  --white-color:            #ffffff;
+  --primary-color:          #ee5007;
+  --secondary-color:        #b0c4de;
+  --section-bg-color:       #f0f8ff;
+  --custom-btn-bg-color:    #ffc107;
+  --custom-btn-bg-hover-color: #ee5007;
+  --dark-color:             #1a1a1a;
+  --p-color:                #717275;
+  --border-color:           #333333;
+
+  --body-font-family:       'Outfit', sans-serif;
+
+  --h1-font-size:           72px;
+  --h2-font-size:           42px;
+  --h3-font-size:           32px;
+  --h4-font-size:           24px;
+  --h5-font-size:           20px;
+  --h6-font-size:           16px;
+  --p-font-size:            16px;
+  --btn-font-size:          14px;
+}
+
+body {
+  background: var(--dark-color);
+  font-family: var(--body-font-family);
+  color: var(--white-color);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+h1 { font-size: var(--h1-font-size); }
+h2 { font-size: var(--h2-font-size); }
+h3 { font-size: var(--h3-font-size); }
+h4 { font-size: var(--h4-font-size); }
+h5 { font-size: var(--h5-font-size); }
+h6 { font-size: var(--h6-font-size); }
+
+p {
+  color: var(--p-color);
+  font-size: var(--p-font-size);
+  font-weight: 400;
+}
+
+/* SECTION */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(32, 0, 0, 0.822));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+/* HEADER & NAVBAR */
+.site-header {
+  background-color: var(--white-color);
+  padding: 10px 0;
+}
+
+.site-header p {
+  color: var(--dark-color);
+  margin-bottom: 0;
+}
+
+.navbar {
+  background-color: var(--dark-color);
+  padding: 20px 0;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: var(--white-color);
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover,
+.navbar-expand-lg .navbar-nav .nav-link.active {
+  color: var(--primary-color);
+}
+
+/* CUSTOM BUTTON */
+.custom-btn {
+  background: var(--primary-color);
+  border: 2px solid transparent;
+  border-radius: 100px;
+  color: var(--white-color);
+  font-size: var(--btn-font-size);
+  font-weight: 700;
+  padding: 12px 25px;
+  transition: all 0.3s;
+}
+
+.custom-btn:hover {
+  background: transparent;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .container {
+  position: relative;
+  z-index: 3;
+}
+
+/* ABOUT SECTION */
+.about-section {
+  background-color: var(--dark-color);
+}
+
+.about-image-wrap {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.about-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.about-image-info {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+}
+
+/* ARTISTS SECTION */
+.artists-section {
+  background-color: #121212;
+}
+
+.artists-thumb {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.artists-image {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.artists-thumb:hover .artists-image {
+  transform: scale(1.05);
+}
+
+.artists-hover {
+  background: rgba(238, 80, 7, 0.92);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.artists-thumb:hover .artists-hover {
+  opacity: 1;
+}
+
+.artists-hover p {
+  color: var(--white-color);
+}
+
+/* SCHEDULE SECTION */
+.schedule-section {
+  background-color: var(--dark-color);
+}
+
+.schedule-table {
+  border-color: var(--border-color);
+}
+
+.schedule-table th, 
+.schedule-table td {
+  padding: 25px;
+  vertical-align: middle;
+  border-color: var(--border-color);
+  color: var(--white-color);
+}
+
+/* PRICING SECTION */
+.pricing-section {
+  background-color: #1a1a1a;
+}
+
+.pricing-thumb {
+  background: var(--dark-color);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 40px;
+  height: 100%;
+}
+
+.pricing-tag {
+  background: var(--primary-color);
+  color: var(--white-color);
+  padding: 5px 15px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-list-item {
+  padding: 8px 0;
+  color: var(--p-color);
+}
+
+/* FORM STYLES */
+.custom-form {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.custom-form .form-control {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  color: var(--white-color);
+  padding: 12px 20px;
+  margin-bottom: 20px;
+}
+
+.custom-form .form-control:focus {
+  background: transparent;
+  border-color: var(--primary-color);
+  color: var(--white-color);
+  box-shadow: none;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: var(--dark-color);
+  padding-top: 80px;
+}
+
+.site-footer-top {
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.site-footer-link {
+  color: var(--p-color);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.site-footer-link:hover {
+  color: var(--primary-color);
+}
+
+.site-footer-bottom {
+  border-top: 1px solid var(--border-color);
+  padding: 30px 0;
+  margin-top: 40px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  background-color: #20ba5a;
+  color: #FFF;
+}
+/* Sticky Navbar Fix */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000 !important;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Body padding jate navbar content ke dheke na fele */
+body {
+    padding-top: 85px; 
+}
+
+/* Mobile Toggle Menu Background Fix */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #000000;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+}
+/* About Section Animation & Hover Effects */
+.about-image-wrap {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* ছবির জুম এবং কালার ইফেক্ট */
+.about-image {
+    width: 100%;
+    height: 400px;
+    object-fit: hover;
+    transition: transform 0.6s ease, filter 0.6s ease;
+    filter: brightness(90%) contrast(100%);
+}
+
+.about-image-wrap:hover .about-image {
+    transform: scale(1.08); /* হোভার করলে ছবি জুম হবে */
+    filter: brightness(100%) contrast(110%); /* কালার ও ব্রাইটনেস আরও প্রানবন্ত হবে */
+}
+
+/* টেক্সট এবং ইনফো বক্সের স্লাইড অ্যানিমেশন */
+.about-image-info {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(228, 44, 20, 0.945));
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    transform: translateY(20px);
+    opacity: 0.9;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+/* মাউস নিলে টেক্সট বক্স ওপরের দিকে স্লাইড হয়ে ভেসে উঠবে */
+.about-image-wrap:hover .about-image-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+/* Event Schedule Box Styling & Different Colors */
+.schedule-table td {
+    vertical-align: middle;
+    padding: 20px !important;
+    border: 2px solid rgba(255, 255, 255, 0.05) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* হোভার করলে বক্সগুলো হালকা ভেসে উঠবে */
+.schedule-table td:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    position: relative;
+}
+
+/* Day 1 - Columns */
+.schedule-table tr:nth-child(1) td:nth-child(2) {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Pop Night - Vibrant Red/Orange */
+}
+.schedule-table tr:nth-child(1) td:nth-child(3) {
+    background: linear-gradient(135deg, #8e2de2, #4a00e0); /* Rock & Roll - Deep Purple */
+}
+
+/* Day 2 - Columns */
+.schedule-table tr:nth-child(2) td:nth-child(3) {
+    background: linear-gradient(135deg, #1d976c, #93f9b9); /* DJ Night - Mint/Green */
+    color: #000 !important;
+}
+.schedule-table tr:nth-child(2) td:nth-child(3) small, 
+.schedule-table tr:nth-child(2) td:nth-child(3) strong {
+    color: #000 !important;
+}
+
+/* Day 3 - Columns */
+.schedule-table tr:nth-child(3) td:nth-child(4) {
+    background: linear-gradient(135deg, #f7971e, #ffd200); /* Country Music - Warm Gold/Yellow */
+    color: #000 !important;
+}
+.schedule-table tr:nth-child(3) td:nth-child(4) small, 
+.schedule-table tr:nth-child(3) td:nth-child(4) strong {
+    color: #011311 !important;
+}
+
+/* ফাকা সেলগুলোর ( - ) জন্য সাধারণ ডার্ক কালার */
+.schedule-table td:not([style]):has(> span), .schedule-table td:contains("-") {
+    background-color: rgba(224, 240, 5, 0.03);
+    color: #777;
+}
+/* Navbar & Links Alignment Fix */
+.navbar-nav {
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+/* Footer Bullet Points & Alignment Fix */
+.site-footer-link-list, 
+.social-icon {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.site-footer-link-list li {
+    list-style-type: none !important;
+    margin-bottom: 8px;
+}
+
+/* Contact Form Input & Label Fix */
+.contact-form .form-floating > .form-control {
+    background-color: #212529;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.contact-form .form-floating > label {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Map responsive height fix */
+.map-wrap {
+    width: 100%;
+    min-height: 400px;
+}
